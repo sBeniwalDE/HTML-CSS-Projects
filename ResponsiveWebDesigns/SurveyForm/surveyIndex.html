@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="surveyStyle.css">
+</head>
+
+<body>
+
+  <h1 id="title">Survey Form</h1>
+
+  <p id="description">Thank you for helping us improve our skills
+  </p>
+
+  <form id="survey-form" class="survey-form">
+
+    <label for="name" id="name-label" class="text-label">Name</label><br>
+    <input id="name" type="text" placeholder="Enter your name" class="input-text" required><br>
+    <label for="email" id="email-label" class="text-label">Email</label><br>
+    <input id="email" type="email" placeholder="Enter your Email" class="input-email" required><br>
+    <label for="age" id="number-label" class="text-label">Age (optional)</label><br>
+    <input id="number" type="number" placeholder="Age" min="10" max="99" class="input-age"><br>
+
+    <label for="dropdown-role" class="selection-label">Which option best describes your current role?</label><br>
+    <select id="dropdown" class="dropdown-select">
+      <option selected disabled class="dropdown-option">Select current role</option>
+      <option value="Student" class="dropdown-option">Student</option>
+      <option value="Full Time Job" class="dropdown-option">Full Time Job</option>
+      <option value="Full Time Learner" class="dropdown-option">Full Time Learner</option>
+      <option value="Prefer not to say" class="dropdown-option">Prefer not to say</option>
+      <option value="other" class="dropdown-option">Other</option>
+    </select><br>
+
+    <label for="user-recommend" class="selection-label">Would you recommend freeCodeCamp to a friend?</label><br>
+    <label for="user-recommend1"><input type="radio" name="user-recommend" class="input-radio" value="Definitely"
+        checked>Definitely</label><br>
+    <label for="user-recommend2"><input type="radio" name="user-recommend" class="input-radio"
+        value="Maybe">Maybe</label><br>
+    <label for="user-recommend3"><input type="radio" name="user-recommend" class="input-radio" value="Not sure">Not
+      sure</label><br>
+
+    <label for="dropdown-feature" class="selection-label">What is your favorite feature of freeCodeCamp?</label><br>
+    <select id="dropdown">
+      <option selected disabled>Select an option</option>
+      <option value="Challenges">Challenges</option>
+      <option value="Projects">Projects</option>
+      <option value="Community">Community</option>
+      <option value="Open Source">Open Source</option>
+    </select><br>
+
+
+    <label for="checkbox-feature" class="checkbox-label">What would you like to see improved? (Check all that
+      apply)</label><br>
+
+    <label for="front-end-projects" class="checkbox-option-label"><input type="checkbox" class="checkbox-options"
+        name="checkbox-option1" value="Front-end Projects">Front-end Projects</label><br>
+
+    <label for="front-end-projects" class="checkbox-option-label"><input type="checkbox" class="checkbox-options"
+        name="checkbox-option2" value="Back-end Projects">Back-end Projects</label><br>
+
+    <label for="front-end-projects" class="checkbox-option-label"><input type="checkbox" class="checkbox-options"
+        name="checkbox-option3" value="Data Visualization">Data Visualization</label><br>
+
+    <label for="front-end-projects" class="checkbox-option-label"><input type="checkbox" class="checkbox-options"
+        name="checkbox-option4" value="Challenges">Challenges</label><br>
+
+    <label for="front-end-projects" class="checkbox-option-label"><input type="checkbox" class="checkbox-options"
+        name="checkbox-option5" value="Videos">Videos</label><br>
+
+    <label for="comment" id="comment-label" class="comment-label">Any comments or suggestions?</label><br>
+    <textarea id="textarea" type="textarea" placeholder="Enter your comment here..." class="input-comment"></textarea>
+
+
+
+    <br><br><input id="submit" type="submit" value="Submit">
+  </form>
+
+</body>
+
+</html>
